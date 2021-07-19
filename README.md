@@ -16,5 +16,6 @@ Nash Equilibrium 을 이루기 위해 각 플레이어의 비용함수 합을 1�
 
 1단계: Generator를 통해 Fake 분포를 만들고, 실제 분포와의 오차를 계산하는 비용함수를 사용해 Discriminator를 학습한다.
     이 때, Generator의 가중치가 아닌, Discrminator의 가중치 만을 수정한다.
+    
 2단계: Genrator가 만든 Fake 분포에 True Label을 주고 Discriminator의 오류를 최대화 하는 방향으로 학습하되,
     이 때, 갱신되는 가중치는 Generator에서만 수정한다.
